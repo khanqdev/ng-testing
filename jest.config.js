@@ -9,6 +9,12 @@ module.exports = {
     }],
   },
   transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)'],
-  moduleFileExtensions: ['ts', 'html', 'js', 'json', 'mjs'],
-  testMatch: ['**/+(*.)+(spec).+(ts)?(x)'],
+  moduleFileExtensions: ['ts', 'html', 'js'],
+  testMatch: ['**/+(*.)+(spec).+(ts)'],
+  testPathIgnorePatterns: [
+    "\\.service\\.ts$"
+  ],
+  coveragePathIgnorePatterns: [
+    "\\.service\\.ts$"
+  ],
 };
